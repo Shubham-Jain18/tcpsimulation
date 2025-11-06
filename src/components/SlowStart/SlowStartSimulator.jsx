@@ -167,9 +167,6 @@ function SlowStartSimulator() {
 
   return (
     <div className="app-container">
-      <header>
-        <h1>Slow Start Simulator</h1>
-      </header>
       
       <StatusDisplay 
         windowBase={windowBase}

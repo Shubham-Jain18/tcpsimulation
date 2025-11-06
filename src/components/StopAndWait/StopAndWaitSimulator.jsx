@@ -168,9 +168,6 @@ function StopAndWaitSimulator() {
 
   return (
     <div className="app-container">
-      <header>
-        <h1>Stop-and-Wait Protocol Simulator</h1>
-      </header>
 
       <StatusDisplay
         windowBase={windowBase}

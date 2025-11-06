@@ -99,9 +99,6 @@ function ThreeWayHandshakeSimulator({ onHandshakeComplete }) {
 
   return (
     <div className="app-container">
-      <header>
-        <h1>3-Way Handshake Simulator (Manual)</h1>
-      </header>
 
       <div className="handshake-container">
         <div className="entity-container">

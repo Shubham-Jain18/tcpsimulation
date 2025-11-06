@@ -163,9 +163,6 @@ function AIMDSimulator() {
 
   return (
     <div className="app-container">
-      <header>
-        <h1>AIMD Simulator</h1>
-      </header>
       
       <StatusDisplay 
         windowBase={windowBase}
