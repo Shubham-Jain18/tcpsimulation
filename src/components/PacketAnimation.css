@@ -1,7 +1,10 @@
+/* src/components/PacketAnimation.css */
 .animation-container {
   display: flex;
-  align-items: center;
-  justify-content: space-between;
+  /* Changed to column to stack labels above SVG */
+  flex-direction: column; 
+  /* align-items: center; /* Removed */
+  /* justify-content: space-between; /* Removed */
   width: 100%;
   max-width: 800px;
   margin: 2rem auto;
@@ -11,17 +14,35 @@
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 }
 
+/* New styles for the label container */
+.entity-label-container {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-bottom: 1rem; /* Space between labels and animation */
+}
+
 .entity {
   font-weight: bold;
-  font-size: 1.2rem;
-  padding: 1rem;
+  /* Smaller base size for mobile */
+  font-size: 1rem;
+  padding: 0.5rem;
   background-color: #34495e;
   border-radius: 4px;
   color: white;
 }
 
+/* Restore larger size on desktops */
+@media (min-width: 768px) {
+  .entity {
+    font-size: 1.2rem;
+    padding: 1rem;
+  }
+}
+
 .animation-svg {
-  flex-grow: 1;
+  /* flex-grow: 1; /* Removed */
+  width: 100%; /* Ensure SVG takes full width */
   overflow: hidden;
 }
 
@@ -83,13 +104,13 @@
   stroke: #c0392b;
 }
 
+/* Removed the problematic styles from the media query */
 @media (max-width: 768px) {
   .animation-container {
-    flex-direction: column;
     padding: 0.5rem;
   }
 
-  .entity {
-    margin-bottom: 1rem;
-  }
+  /* .entity { 
+    margin-bottom: 1rem; // Removed 
+  } */
 }
