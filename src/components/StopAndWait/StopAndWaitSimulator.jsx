@@ -170,9 +170,6 @@ function StopAndWaitSimulator() {
     <div className="app-container">
 
       <StatusDisplay
-        windowBase={windowBase}
-        base={senderBase}
-        nextseqnum={senderNextSeqNum}
         timerValue={timerValue}
         timerForPacket={timerForPacket}
       />
