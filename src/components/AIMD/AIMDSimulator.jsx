@@ -165,12 +165,7 @@ function AIMDSimulator() {
     <div className="app-container">
       
       <StatusDisplay 
-        windowBase={windowBase}
-        base={senderBase} 
-        nextseqnum={senderNextSeqNum} 
         timerValue={timerValue}
-        congestionWindow={congestionWindow}
-        requiredWindowSize={requiredWindowSize}
       />
 
       <SimulatorControls 
