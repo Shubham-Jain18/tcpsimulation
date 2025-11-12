@@ -139,7 +139,7 @@ function TCPClosureSimulator() {
       <div className="handshake-container">
         <div className="entity-container">
           <h2>Client</h2>
-          <p>Status: {getStatus(clientState)}</p>
+          <p>{getStatus(clientState)}</p>
           <button onClick={handleSendFinClient}>
             Send FIN
           </button>
@@ -149,7 +149,7 @@ function TCPClosureSimulator() {
         </div>
         <div className="entity-container">
           <h2>Server</h2>
-          <p>Status: {getStatus(serverState)}</p>
+          <p>{getStatus(serverState)}</p>
           <button onClick={handleSendAckServer}>
             Send ACK
           </button>

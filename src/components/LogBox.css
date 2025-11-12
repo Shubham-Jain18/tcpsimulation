@@ -4,15 +4,16 @@
   max-width: 100%;
   border-radius: 8px;
   overflow: hidden;
-  background-color: #f0f8ff;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background-color: #f0f8ff; /* Original AliceBlue background */
+  box-shadow: 0 4px 6px rgba(0,0,0,0.07); /* Visible shadow */
+  border: 1px solid #cce7f5; /* Light blue border */
 }
 
 .log-container h5 {
   text-align: center;
   margin: 0;
   padding: 15px;
-  background-color: #87ceeb;
+  background-color: #87ceeb; /* Original SkyBlue header */
   color: black;
   font-size: 1.2rem;
 }
@@ -22,7 +23,7 @@
   overflow-y: auto;
   height: 350px;
   padding: 15px;
-  color: black;
+  color: black; /* Black text */
   font-family: 'Courier New', Courier, monospace;
 }
 
@@ -34,7 +35,7 @@
 
 .log-content li {
   padding-bottom: 8px;
-  border-bottom: 1px solid #ccc;
+  border-bottom: 1px solid #dde; /* Light grey border */
   margin-bottom: 8px;
   font-size: 0.9rem;
   word-break: break-word; /* Allow long log lines to wrap */

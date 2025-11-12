@@ -17,7 +17,7 @@ const protocolTitles = {
   slow_start: 'Slow Start Simulator',
   aimd: 'AIMD Simulator',
   closure: 'TCP Closure Simulator (4-Way Handshake)',
-  // 'tcp' title will be handled by its own component
+  tcp: 'Complete TCP Simulator', // <-- ADDED THIS
 };
 
 function App() {
@@ -25,10 +25,10 @@ function App() {
 
   return (
     <div>
-      {/* Pass the title to the Navbar, pass null for 'tcp' */}
+      {/* Pass the title to the Navbar */}
       <Navbar 
         setProtocol={setProtocol} 
-        title={protocol === 'tcp' ? null : protocolTitles[protocol]} 
+        title={protocolTitles[protocol]} // <-- REMOVED THE TERNARY OPERATOR
       />
       
       {protocol === 'handshake' && <ThreeWayHandshakeSimulator />}

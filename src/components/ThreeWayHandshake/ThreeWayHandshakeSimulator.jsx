@@ -103,7 +103,7 @@ function ThreeWayHandshakeSimulator({ onHandshakeComplete }) {
       <div className="handshake-container">
         <div className="entity-container">
           <h2>Client</h2>
-          <p>Status: {getStatus(clientStateBits)}</p>
+          <p>{getStatus(clientStateBits)}</p>
           <button onClick={handleSendSyn}>
             {"Send SYN"}
           </button>
@@ -113,7 +113,7 @@ function ThreeWayHandshakeSimulator({ onHandshakeComplete }) {
         </div>
         <div className="entity-container">
           <h2>Server</h2>
-          <p>Status: {getStatus(serverStateBits)}</p>
+          <p>{getStatus(serverStateBits)}</p>
           <button onClick={handleSendSynAck}>
             Send SYN-ACK
           </button>
