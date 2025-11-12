@@ -43,13 +43,24 @@
 
 .entity-container button {
   margin: 0.25rem 0.25rem; /* Space out buttons */
-  border: 1px solid #adb5bd; /* VISIBLE BORDER */
+  
+  /* CHANGED: Style to match control buttons */
+  background-color: #646cff;
+  color: white;
+  border: none; /* Remove the grey border */
+  transition: background-color 0.25s ease;
+}
+
+/* ADDED: Hover effect */
+.entity-container button:hover {
+  background-color: #535bf2;
 }
 
 .entity-container button:disabled {
   background-color: #cccccc; /* Light grey disabled */
   color: #888;
-  border-color: #cccccc;
+  border: none; /* CHANGED: Match non-disabled state */
+  opacity: 0.8; /* ADDED */
 }
 
 .status-badge {

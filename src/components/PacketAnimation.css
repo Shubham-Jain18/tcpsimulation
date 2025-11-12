@@ -75,7 +75,7 @@
 }
 
 .transit-item .label {
-  fill: white; /* White text on the colored circles */
+  fill: black; /* CHANGED: Was white */
   font-size: 0.8rem;
   font-weight: bold;
 }

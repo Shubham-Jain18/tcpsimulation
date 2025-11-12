@@ -5,7 +5,7 @@
 
   color-scheme: light;
   color: #213547; /* Primary dark text */
-  background-color: #e9ecef; /* New light grey page background */
+  background-color: #ffffff; /* CHANGED: Was #e9ecef */
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -76,7 +76,7 @@ button:focus-visible {
 @media (prefers-color-scheme: light) {
   :root {
     color: #213547;
-    background-color: #e9ecef; /* Match the default */
+    background-color: #ffffff; /* CHANGED: Was #e9ecef */
   }
 
   a:hover {

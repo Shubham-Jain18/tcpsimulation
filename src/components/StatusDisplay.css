@@ -1,7 +1,7 @@
 .status-container {
   display: flex;
   gap: 1rem; /* Slightly reduce gap */
-  background-color: #f8f9fa; /* Off-white card */
+  background-color: #e9ecef; /* CHANGED: Was #f8f9fa */
   padding: 1rem; /* Slightly reduce padding */
   border-radius: 8px;
   border: 1px solid #ced4da; /* Clear border */
